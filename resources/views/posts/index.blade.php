@@ -22,7 +22,7 @@
         <div class="card-body">
             <h2 class="card-title fs-5">{{ $post->title }}</h2>
             <p class="card-text">{{ $post->content }}</p>
-            <p>{{ $post->created_at->format('Y/m/d H:i') }}</p>
+            <p>{{ $post->updated_at->format('Y/m/d H:i') }}</p>
 
             <div class="d-flex">
                 <a href="{{ route('posts.show', $post) }}" class="btn btn-outline-primary d-block me-1">詳細</a>
